@@ -1,4 +1,5 @@
 # Python - Variáveis e tipos
+---
 
 "A linguagem Python possui diferentes tipos(objetos) de dados, mas no final os tipos em são objetos".
 

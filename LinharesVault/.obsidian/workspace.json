@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Eletronica/Componentes/Processadores.md",
-                "mode": "preview",
+                "file": "Eletronica/Componentes/Solda.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Processadores"
+              "title": "Solda"
             }
           }
         ]
@@ -172,16 +172,17 @@
   },
   "active": "bc79c98e86b100f4",
   "lastOpenFiles": [
-    "Eletronica/Componentes/Processadores.md",
     "Eletronica/_Eletronica.md",
-    "Eletronica/Componentes/Componentes.md",
     "Programacao/Ferramentas/Git/Git.md",
+    "Programacao/Linguagens/Python/Python.md",
     "Programacao/Frameworks/Angular/Angular.md",
+    "Eletronica/Componentes/Solda.md",
+    "Eletronica/Componentes/Componentes.md",
+    "Eletronica/Componentes/Processadores.md",
     "Programacao/Ferramentas/Ferramentas.md",
     "Programacao/Ferramentas/Git/GitDef.md",
     "Programacao/Linguagens/Linguagens.md",
     "Programacao/_Programacao.md",
-    "Programacao/Linguagens/Python/Python.md",
     "Programacao/Linguagens/Python/variaveis_py.md",
     "Programacao/Linguagens/Java/Java.md",
     "Programacao/DataScience/_DataScience.md",
