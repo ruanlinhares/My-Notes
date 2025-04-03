@@ -38,3 +38,14 @@ No angular cada componente criado É composto por 3 arquivos principais:
 
 Um Aquivo **HTML**, um aquivo **CSS** ou **SCSS** e um arquivo **JavaScript** ou **TypeScript**. O esquema funciona assim como no HTML, CSS e js puro, a diferença é que esses componentes podem ser reciclados e utilizados durante todo o projeto facilmente. Uma boa prática é criar uma pasta **pages** para seus componentes tipo página, é dentro desses componentes que iremos importar nossos componentes da pasta **components**.
 
+# Bootstrap
+
+# Funções
+
+## NgOnInit 
+## NgDestroy
+
+## NgIf
+
+## NgDoCheck
+
