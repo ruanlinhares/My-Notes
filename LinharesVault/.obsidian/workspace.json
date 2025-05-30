@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Eletronica/Componentes/Solda.md",
+                "file": "Programacao/ArqSoftware/MVC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solda"
+              "title": "MVC"
             }
           }
         ]
@@ -158,7 +158,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 883.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,26 +173,27 @@
   },
   "active": "bc79c98e86b100f4",
   "lastOpenFiles": [
+    "Programacao/Linguagens/Python/Python.md",
+    "Programacao/ArqSoftware/MVC.md",
+    "Programacao/Linguagens/_Linguagens.md",
+    "Programacao/_Programacao.md",
+    "Programacao/Frameworks/_Frameworks.md",
+    "Programacao/Ferramentas/_Ferramentas.md",
+    "Programacao/ArqSoftware/_ArqSoftware.md",
+    "Programacao/DataScience/EtapasImplementacaoProj.pdf",
+    "Eletronica/Componentes/Solda.md",
     "Eletronica/_Eletronica.md",
     "Programacao/Ferramentas/Git/Git.md",
-    "Programacao/Linguagens/Python/Python.md",
     "Programacao/Frameworks/Angular/Angular.md",
-    "Eletronica/Componentes/Solda.md",
     "Eletronica/Componentes/Componentes.md",
     "Eletronica/Componentes/Processadores.md",
-    "Programacao/Ferramentas/Ferramentas.md",
     "Programacao/Ferramentas/Git/GitDef.md",
-    "Programacao/Linguagens/Linguagens.md",
-    "Programacao/_Programacao.md",
     "Programacao/Linguagens/Python/variaveis_py.md",
     "Programacao/Linguagens/Java/Java.md",
     "Programacao/DataScience/_DataScience.md",
-    "Programacao/ArqSoftware/_ArqSoftware.md",
-    "Programacao/DataScience/EtapasImplementacaoProj.pdf",
     "Fisica/_Fisica.md",
     "Eletronica/fabricacaoPCB.md",
     "Matematica/_Matematica.md",
-    "Programacao/Frameworks/Frameworks.md",
     "Programacao/Frameworks/Angular/_Angular.md",
     "Programacao/Frameworks/Angular/_imgAngular/Screenshot from 2025-01-27 06-50-38.png",
     "Programacao/Frameworks/Angular/_imgAngular/Screenshot from 2025-01-27 07-16-09.png",

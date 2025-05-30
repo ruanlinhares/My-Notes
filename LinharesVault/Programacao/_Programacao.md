@@ -1,7 +1,7 @@
 # Tópicos
-[[Linguagens]]
-[[Frameworks]]
-[[Ferramentas]]
+[[_Linguagens]]
+[[_Frameworks]]
+[[_Ferramentas]]
 # Relacionados
 
 [[_ArqSoftware]]
