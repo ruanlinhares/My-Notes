@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/ArqSoftware/MVC.md",
+                "file": "Programacao/ArqSoftware/Configuração de rotas (PHP).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MVC"
+              "title": "Configuração de rotas (PHP)"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bb0d9b5dbdc09bcf",
@@ -163,18 +164,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "bc79c98e86b100f4",
   "lastOpenFiles": [
-    "Programacao/Linguagens/Python/Python.md",
+    "mod_rewrite.md",
+    "().md",
+    "Programacao/ArqSoftware/Configuração de rotas (PHP).md",
     "Programacao/ArqSoftware/MVC.md",
+    "Programacao/Linguagens/Python/Python.md",
     "Programacao/Linguagens/_Linguagens.md",
     "Programacao/_Programacao.md",
     "Programacao/Frameworks/_Frameworks.md",
