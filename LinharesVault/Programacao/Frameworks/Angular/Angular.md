@@ -1,4 +1,5 @@
-# Angular init
+(Notas atualizadas em 01/07/2025)
+# Iniciando
 ---
 #### Instalar o Angular
 
@@ -27,13 +28,14 @@ npm create vite@latest
 **Snippets** são blocos de código que agilizam o desenvolvimento, eles podem ser criados ou utilizados de alguma extensão.
 
 # Visão geral do projeto
+---
 
 ![[Screenshot from 2025-01-27 06-50-38.png]]
 
 O projeto angular em uma visão rápida é dividido entre o meu **index.html** que chama o arquivo **app.component.html**, dentro do mesmo podemos importar nossos componentes que serão exibidos.
 
 # Components
-
+---
 No angular cada componente criado É composto por 3 arquivos principais:
 
 ![[Screenshot from 2025-01-27 07-16-09.png]]
