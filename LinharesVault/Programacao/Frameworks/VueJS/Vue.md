@@ -1,4 +1,4 @@
-**(Notas atualizadas em 08/07/2025)**
+**(Notas atualizadas em 09/07/2025)**
 # Iniciando
 ---
 
@@ -55,7 +55,7 @@ Na tag ```<script>``` de cada arquivo ```.vue``` poderemos fazer a chamada de ou
 #importa o modulo (componente) desejado
 import nome-do-componente from ./path/do/componente
 
-# Dá nome ao meu componente e registra usos de outros componentes
+# Dá nome ao componente atual e registra usos de outros componentes
 export default {
 	name: 'componente-atual',
 	components:{
@@ -67,5 +67,48 @@ export default {
 </script>
 ```
 
-De uma forma mais detalhada, o ```export default{}``` funciona como a planta baixa de uma casa, a casa é nosso componente. Ele é usado para dar nome ao componente, assim ele pode ser identificado facilmente e permite que ele faça recursividade, além de registrar quais componentes ele carrega em si e que usará na tag ```<template>```. Existem outras funções para o objeto de configuração. Aqui usamos as propriedades name e components, mas existem data, methods, props, computed e watch.
+De uma forma mais detalhada, o ```export default{}``` funciona como a planta baixa de uma casa, a casa é nosso componente. Ele é usado para dar nome ao componente, assim ele pode ser identificado facilmente e permite que ele faça recursividade, além de registrar quais componentes ele carrega em si e que usará na tag ```<template>```. Existem outras funções e atributos para o objeto de configuração. Aqui usamos as propriedades name e components, mas existem data, methods, props, computed e watch.
+
+## Diretivas v-if/v-show/v-for/v-bind
+
+Diretivas são instruções que o **Vue** atribui aos elementos HTML. As diretivas são muito usadas. No HTML puro temos diretivas como ```alt```, ```src```, ```placeholder``` e outros. O vue adiciona diretivas especiais ao elemento HTLM . 
+
+### Condicionais v-if e v-show
+
+Podemos usar diretivas de condicional par mudar o estado de um elemento html ou ocultá-lo.
+
+```
+<template>
+	<ImageLogo
+		v-show="showImageLogo" # Ocultar ou exibir o elemento
+	/>
+</template>
+
+<script>
+export default{
+	name: 'component-name',
+	components:{
+		ImageLogo
+	},
+	data(){
+		return{
+		 showImageLogo: false, #objeto reativo
+		}
+	}
+}
+</script>
+```
+
+Agora, estamos trabalhando com uma função chamada ```data()``` no ```export default{}```. Essa função retorna um objeto e tudo que estiver dentro dele é chamado de objeto reativo. Ele pode receber um valor bool, string, número, vetore(arrays) até mesmo outro objeto. É através dessas propriedades reativas que ```data()``` retorna que gerenciamos o estado do componente.
+
+**v-if VS v-show - Qual a diferença?**
+
+**v-if** : Esconde ou mostra o elemento removendo ou adicionando no DOM. Ele literalmente cria ou destrói o elemento.
+
+**v-show** : Esconde ou mostra o elemento desabilitando-o visualmente. Ele permanece no DOM, porém seu style ganha a propriedade ```display: none``` para ocultar, e para mostrar, essa propriedade é removida. 
+
+**OBS**: o comando ```v-if``` vai consumir mais processamento, então ficar atento para a interface não ficar pesada e lenta.
+
+
+
 
