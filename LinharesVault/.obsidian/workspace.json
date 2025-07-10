@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Frameworks/VueJS/Vue.md",
+                "file": "Programacao/Linguagens/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vue"
+              "title": "Java"
             }
           }
         ]
@@ -159,7 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 543.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -174,10 +174,14 @@
   },
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
-    "Programacao/Linguagens/_Linguagens.md",
-    "Programacao/_Programacao.md",
-    "Java.md",
     "Programacao/Frameworks/VueJS/Vue.md",
+    "Programacao/Linguagens/Java/Java.md",
+    "Programacao/_Programacao.md",
+    "Programacao/Frameworks/_Frameworks.md",
+    "Programacao/Linguagens/_Linguagens.md",
+    "Programacao/Linguagens/Python/Python.md",
+    "Programacao/Linguagens/Java",
+    "Java.md",
     "Programacao/ArqSoftware/MVC.md",
     "Programacao/ArqSoftware/_ArqSoftware.md",
     "Programacao/ArqSoftware/Configuração de rotas (PHP).md",
@@ -185,11 +189,8 @@
     "Eletronica/Componentes/Solda.md",
     "Fisica/_Fisica.md",
     "Matematica/_Matematica.md",
-    "Programacao/Frameworks/_Frameworks.md",
     "Programacao/Frameworks/Angular/Angular.md",
-    "Programacao/Linguagens/Python/Python.md",
     "Programacao/DataScience/EtapasImplementacaoProj.pdf",
-    "Programacao/Linguagens/Java/Java.md",
     "Programacao/DataScience/_DataScience.md",
     "Programacao/Frameworks/Angular/_imgAngular/Screenshot from 2025-01-27 07-16-09.png",
     "Programacao/Frameworks/Angular/_imgAngular/Screenshot from 2025-01-27 06-50-38.png",
@@ -203,7 +204,6 @@
     "Programacao/Ferramentas/Git/GitDef.md",
     "Programacao/Linguagens/Python/variaveis_py.md",
     "Eletronica/fabricacaoPCB.md",
-    "Programacao/Frameworks/Angular/_Angular.md",
     "Programacao/ArqSoftware",
     "Eletronica/Componentes",
     "Screenshot from 2025-01-27 06-41-00.png",
@@ -211,7 +211,6 @@
     "Programacao/Ferramentas",
     "Programacao/Frameworks",
     "Programacao/Linguagens",
-    "Angular",
-    "Programacao/Frameworks/Angular"
+    "Angular"
   ]
 }

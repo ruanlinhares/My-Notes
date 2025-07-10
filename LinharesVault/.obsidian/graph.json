@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "file:Programacao",
@@ -15,10 +15,10 @@
       }
     },
     {
-      "query": "path:Programacao/Linguagens  ",
+      "query": "file:_Linguagens  ",
       "color": {
         "a": 1,
-        "rgb": 2031360
+        "rgb": 16514847
       }
     },
     {
@@ -54,34 +54,6 @@
       "color": {
         "a": 1,
         "rgb": 14942453
-      }
-    },
-    {
-      "query": "file:Matematica  ",
-      "color": {
-        "a": 1,
-        "rgb": 16514847
-      }
-    },
-    {
-      "query": "file:Fisica  ",
-      "color": {
-        "a": 1,
-        "rgb": 16514847
-      }
-    },
-    {
-      "query": "file:DataScience",
-      "color": {
-        "a": 1,
-        "rgb": 16514847
-      }
-    },
-    {
-      "query": "file: ArqSoftware",
-      "color": {
-        "a": 1,
-        "rgb": 16580383
       }
     }
   ],
