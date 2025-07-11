@@ -1,4 +1,4 @@
-**(Notas atualizadas em 09/07/2025)**
+**(Notas atualizadas em 10/07/2025)**
 # Iniciando
 ---
 
@@ -78,9 +78,23 @@ Diretivas são instruções que o **Vue** atribui aos elementos HTML. As diretiv
 Podemos usar diretivas de condicional par mudar o estado de um elemento html ou ocultá-lo.
 
 ```
+import ImageLogo from ./components/ImageLogo.vue
+import AdminTab from ./components/AdminTab.vue
+import DeveloperTab from ./components/DeveloperTab.vue
+import UserTab from ./components/UserTab.vue
+
 <template>
 	<ImageLogo
 		v-show="showImageLogo" # Ocultar ou exibir o elemento
+	/>
+	<AdminTab
+		v-if="accessLevel == 'admin'"
+	/>
+	<DeveloperTab
+		v-else-if="accessLevel == 'developer'"
+	/>
+	<UserTab
+		V-else
 	/>
 </template>
 
@@ -88,11 +102,15 @@ Podemos usar diretivas de condicional par mudar o estado de um elemento html ou 
 export default{
 	name: 'component-name',
 	components:{
-		ImageLogo
+		ImageLogo,
+		AdminTab,
+		DeveloperTab,
+		UserTab
 	},
 	data(){
 		return{
 		 showImageLogo: false, #objeto reativo
+		 accessLevel: 'admin'
 		}
 	}
 }
@@ -108,6 +126,9 @@ Agora, estamos trabalhando com uma função chamada ```data()``` no ```export de
 **v-show** : Esconde ou mostra o elemento desabilitando-o visualmente. Ele permanece no DOM, porém seu style ganha a propriedade ```display: none``` para ocultar, e para mostrar, essa propriedade é removida. 
 
 **OBS**: o comando ```v-if``` vai consumir mais processamento, então ficar atento para a interface não ficar pesada e lenta.
+
+### Loops V-for
+
 
 
 
