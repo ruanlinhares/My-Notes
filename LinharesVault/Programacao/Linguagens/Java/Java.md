@@ -1,4 +1,4 @@
-**(Notas atualizadas em 10/07/2025)**
+**(Notas atualizadas em 14/07/2025)**
 
 # Iniciando
 ---
@@ -21,3 +21,25 @@ Código java (.java) --> Compilador (Javac) --> Bytecode(.class) --> JVM (Java V
 Neste exemplo, o código-fonte é enviado para o compilador, o compilador, então transforma esse código em para linguagem de máquina (bytecode). Por fim, esse **bytecode** é interpretado pela JVM (Java Virtual Machine). A JVM precisa estar intalada no lado do cliente, seja por meio do **JDK** (Java Development Kit) ou do **JRE**(Java Runtime Enviroment).
 # Essencial
 ---
+## Variáveis
+
+Java é uma linguagem estaticamente tipada, isso significa que o programador deve definir o tipo de dado para uso em variáveis e funções. Diferente de outras linguagens como Python e javascript que são dinâmicamente tipadas. Nessas, não é necessário definir os tipos de dado. 
+
+Exemplo de alguns tipos essenciais em java:
+
+```
+# Classe para valores de textos
+String nome = "Mark Grayson";
+
+#tipo para valores inteiros e decimais
+int idade = 17;
+double forca = 57.03;
+float velocidade = 35.00f; # valores float devem ser acompanhados por "f" ou "F"  
+
+#tipos para valores booleanos
+boolean viltrumita = true;
+```
+
+Algumas observações devem ser feitas. Primeiramente, as classes, variáveis e métodos em java devem ser definidas no padrão **camelCase** (para variáveis e métodos) ou **PascalCase** (para classes). As variáveis e métodos devem possuir a primeira letra no minúsculo. Utiliza-se letras maiúsculas, no início, somente em classes, para melhor identificação de cada coisa. Pois, podemos ter uma variável ou método com o mesmo nome da classe. 
+
+Além disso, outra observação que devemos fazer é sobre os valores float. Eles devem ser escritos com a letra "f" ou "F" no final, pois, em java, os valores com ponto flutuante são definidos por padrão como tipo ```double```. Portanto, não podemos inserir um valor double me uma variável do tipo float, ocorre erro de compilação.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Frameworks/Angular/Angular.md",
+                "file": "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Angular"
+              "title": "AssemblyX86_64"
             }
           }
         ]
@@ -173,11 +173,12 @@
   },
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
-    "Programacao/Frameworks/VueJS/Vue.md",
-    "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
     "Programacao/Linguagens/Java/Java.md",
-    "Programacao/_Programacao.md",
     "Programacao/Linguagens/_Linguagens.md",
+    "Programacao/_Programacao.md",
+    "Programacao/Frameworks/VueJS/Vue.md",
+    "Programacao/Frameworks/Angular/Angular.md",
+    "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
     "Programacao/Linguagens/AssemblyX86_64",
     "Programacao/Frameworks/_Frameworks.md",
     "Programacao/Linguagens/Python/Python.md",
@@ -190,7 +191,6 @@
     "Eletronica/Componentes/Solda.md",
     "Fisica/_Fisica.md",
     "Matematica/_Matematica.md",
-    "Programacao/Frameworks/Angular/Angular.md",
     "Programacao/DataScience/EtapasImplementacaoProj.pdf",
     "Programacao/DataScience/_DataScience.md",
     "Programacao/Frameworks/Angular/_imgAngular/Screenshot from 2025-01-27 07-16-09.png",
