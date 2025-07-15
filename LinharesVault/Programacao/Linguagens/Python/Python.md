@@ -11,19 +11,19 @@ Alguns tipos de dados que são mais trabalhados:
     </tr>
     <tr>
         <th>int</th>
-        <th>10 | -4 | 100</th>
+        <td>10 | -4 | 100</td>
     </tr>
     <tr>
         <th>float</th>
-        <th>10.5 | -0.223 | 3.58</th>
+        <td>10.5 | -0.223 | 3.58</td>
     </tr>
     <tr>
         <th>String</th>
-        <th>"Hello World"</th>
+        <td>"Hello World"</td>
     </tr>
     <tr>
         <th>Boolean</th>
-        <th>0 or 1 || True or False</th>
+        <td>0 or 1 || True or False</td>
     </tr>
 </table>
 
@@ -47,12 +47,7 @@ trouxa = False
 
 nome, idade, altura, trouxa = "Harry Potter", 16, 1.79, False   
 ```
-Em Python diferente de outras linguagens como Java ou C, não é necessário delaclarar 
-o tipo do dado antes da variável, pois de ela não é compilada, o interpretador python faz o 
-reconhecimento automaticamente. Outro detalhe é que em Python "não existe" o tipo char todo 
-tipo de caracter é definido com string e não se faz necessario utilizar apóstrofo ou 
-aspas para diferenciar os tipos char e string, podemos utilizar as duas sinalizações para 
-indicar uma string uma string.
+Em Python diferente de outras linguagens como Java ou C, não é necessário delaclarar o tipo do dado antes da variável, o interpretador python faz o reconhecimento automaticamente. Outro detalhe é que em Python "não existe" o tipo char todo tipo de caracter é definido com string e não se faz necessario utilizar apóstrofo ou aspas para diferenciar os tipos char e string, podemos utilizar as duas sinalizações para indicar uma string uma string.
 
 ### Função type()
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
+                "file": "Programacao/Linguagens/Java/Java.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AssemblyX86_64"
+              "title": "Java"
             }
           }
         ]
@@ -173,15 +173,15 @@
   },
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
+    "Programacao/Linguagens/Python/Python.md",
     "Programacao/Linguagens/Java/Java.md",
     "Programacao/Linguagens/_Linguagens.md",
     "Programacao/_Programacao.md",
+    "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
     "Programacao/Frameworks/VueJS/Vue.md",
     "Programacao/Frameworks/Angular/Angular.md",
-    "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
     "Programacao/Linguagens/AssemblyX86_64",
     "Programacao/Frameworks/_Frameworks.md",
-    "Programacao/Linguagens/Python/Python.md",
     "Programacao/Linguagens/Java",
     "Java.md",
     "Programacao/ArqSoftware/MVC.md",

@@ -1,4 +1,4 @@
-**(Notas atualizadas em 14/07/2025)**
+**(Notas atualizadas em 15/07/2025)**
 
 # Iniciando
 ---
@@ -12,7 +12,7 @@ Para deixar claro, precisamos baixar o pacote de desenvolvimento do java (**JDK*
 
 ## Processo de compilação
 
-Atualmente é comum que diversas linguagens de programação sejam chamadas de linguagem de **alto nível**, pois sua comunicação é mais próxima da linguagem humana. Com o Java acontece o mesmo: ele é uma linguagem de alto nível que, assim como outras, precisa ser compilada para ser executada em máquinas. Nesse processo existia um problema, cada código-fonte é escrito somente para um sistema operacional ou modelo de processador,o que implicava na necessidade de escrever vários códigos para máquinas diferentes. O Java vem para quebrar isso. Ele permite que um código-fonte possa ser executado em qualquer máquina, e isso acontece através da **JVM** (Java Virtual Machine).
+Atualmente é comum que diversas linguagens de programação sejam chamadas de linguagem de **alto nível**, pois sua comunicação é mais próxima da linguagem humana. Com o Java acontece o mesmo: ele é uma linguagem de alto nível que, assim como outras, precisa ser compilada para ser executada em máquinas. Nesse processo existia um problema, cada código-fonte era escrito somente para um sistema operacional ou modelo de processador,o que implicava na necessidade de escrever vários códigos para máquinas diferentes. O Java vem para quebrar isso. Ele permite que um código-fonte possa ser executado em qualquer máquina, e isso acontece através da **JVM** (Java Virtual Machine).
 
 ```
 Código java (.java) --> Compilador (Javac) --> Bytecode(.class) --> JVM (Java Virtual Machine) --> CPU (execução na máquina destino)
@@ -28,7 +28,7 @@ Java é uma linguagem estaticamente tipada, isso significa que o programador dev
 Exemplo de alguns tipos essenciais em java:
 
 ```
-# Classe para valores de textos
+# Classe para valores em textos
 String nome = "Mark Grayson";
 
 #tipo para valores inteiros e decimais
@@ -42,4 +42,140 @@ boolean viltrumita = true;
 
 Algumas observações devem ser feitas. Primeiramente, as classes, variáveis e métodos em java devem ser definidas no padrão **camelCase** (para variáveis e métodos) ou **PascalCase** (para classes). As variáveis e métodos devem possuir a primeira letra no minúsculo. Utiliza-se letras maiúsculas, no início, somente em classes, para melhor identificação de cada coisa. Pois, podemos ter uma variável ou método com o mesmo nome da classe. 
 
-Além disso, outra observação que devemos fazer é sobre os valores float. Eles devem ser escritos com a letra "f" ou "F" no final, pois, em java, os valores com ponto flutuante são definidos por padrão como tipo ```double```. Portanto, não podemos inserir um valor double me uma variável do tipo float, ocorre erro de compilação.
+Além disso, outra observação que devemos fazer é sobre os valores float. Eles devem ser escritos com a letra "f" ou "F" no final, pois, em java, os valores com ponto flutuante são definidos por padrão como tipo ```double```. Portanto, não podemos inserir um valor double em uma variável do tipo float, ocorre erro de compilação.
+
+### Manipulando textos com a Classe [String]
+
+O "tipo" **String** na verdade é uma classe em java. Diferente dos tipos primitivos, a classe String possui metodos e comportamentos internos que nos possibilitam manipular textos. Embora seja uma classe, o java oferece uma sintaxe especial para ela, permitindo a criação de um objeto da classe string de forma literal, assim como os tipos primitivos.
+
+```
+String nome = "Peter Parker";
+```
+
+Os métodos oferecidos por essa classe são diversos. Entre eles podemos destacar alguns, eles serão utilizados de acordo com a necessidade de cada desenvolvedor. Portanto, não há a necessidade de descrever todos os métodos.
+
+```.length()```: responsável por contar quantos caracteres existem naquela string.
+```.split()```: utilizado para repartir a string em um vetor de de strings usando um delimitador de separação.
+```.trim()```: remove espaços em "branco" das strings.
+```.equals()```: compara uma string com outra e retorna um valor booleano.
+
+### Conversão de valores [Type Casting]
+
+Em Java, podemos ter dois tipos de conversão: **implícita** e **explícicta**.
+
+**Conversão implícita (Widening casting)**: Esse é o tipo de conversão mais seguro, pois o java faz o trabalho para você, sem a necessidade de um comando. Ela ocontece quando queremos converter um tipo menor para um tipo maior. Sendo assim, se quisermos converter um ```int```  e armazená-lo em uma variável do tipo ```float``` , o java se encarregará de fazer a conversão. 
+
+```
+#ENTRADA
+float num1 = 4; # conversão ímplícita de int para float
+System.out.println(num1)
+
+#SAÍDA
+4.0
+```
+
+**Conversão explícita (Narrowing Casting)**: Essa conversão exige que o programador faça a conversão manualmente, pois existe a possibilidade de perda de dados. Isso ocorre quando tentamos converter um tipo de dado maior em um menor. Estamos "estreitando" um tipo de dado grande para caber em um pequeno, sendo assim, podemos perder parte do seu conteúdo. Para fazer essa conversão informamos o tipo de dado para o qual queremos converter.
+
+```
+#ENTRADA
+int num2 = (int) 34.06; #conversão explícita de double para int
+System.out.println(num2)
+
+#SAÍDA
+35
+```
+
+Aqui esta uma tabela sobre os tipos de dado e as conversões necessárias:
+
+<table> 
+	<thead> 
+		<tr> 
+			<th>DE \ PARA</th> 
+			<th>byte</th> 
+			<th>short</th> 
+			<th>char</th> 
+			<th>int</th> 
+			<th>long</th> 
+			<th>float</th> 
+			<th>double</th> 
+		</tr> 
+	</thead> 
+	<tbody> 
+		<tr> 
+			<th>byte</th> 
+			<td style="background-color: lightgray;"></td> 
+			<td>Implícito</td> 
+			<td>char</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+		</tr> 
+		<tr> 
+			<th>short</th> 
+			<td>byte</td> 
+			<td style="background-color: lightgray;"></td> 
+			<td>char</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+		</tr> 
+		<tr> 
+			<th>char</th> 
+			<td>byte</td> 
+			<td>short</td> 
+			<td style="background-color: lightgray;"></td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+		</tr> 
+		<tr> 
+			<th>int</th> 
+			<td>byte</td> 
+			<td>short</td> 
+			<td>char</td> 
+			<td style="background-color: lightgray;"></td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+			<td>Implícito</td> 
+			
+		</tr>
+		 <tr> 
+			 <th>long</th> 
+			 <td>byte</td> 
+			 <td>short</td> 
+			 <td>char</td> 
+			 <td>int</td> 
+			 <td style="background-color: lightgray;"></td> 
+			 <td>Implícito</td> 
+			 <td>Implícito</td> 
+		</tr> 
+		<tr> 
+			<th>float</th> 
+			<td>byte</td> 
+			<td>short</td> 
+			<td>char</td> 
+			<td>int</td> 
+			<td>long</td> 
+			<td style="background-color: lightgray;"></td> 
+			<td>Implícito</td> 
+		</tr> 
+		<tr> 
+			<th>double</th> 
+			<td>byte</td> 
+			<td>short</td> 
+			<td>char</td> 
+			<td>int</td> 
+			<td>long</td> 
+			<td>float</td> 
+			<td style="background-color: lightgray;"></td> 
+		</tr> 
+	</tbody> 
+</table>
+
+
+
+## Condicionais
+
