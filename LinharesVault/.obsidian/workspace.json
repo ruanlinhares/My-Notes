@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Linguagens/Java/Java.md",
+                "file": "Programacao/Linguagens/Java/POO_Java.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java"
+              "title": "POO_Java"
             }
           }
         ]
@@ -173,25 +173,28 @@
   },
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
-    "Programacao/Linguagens/Python/Python.md",
+    "Eletronica/Componentes/Solda.md",
+    "Eletronica/Untitled",
+    "Eletronica/Componentes/Componentes.md",
+    "Programacao/Linguagens/Java/POO_Java.md",
+    "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
     "Programacao/Linguagens/Java/Java.md",
     "Programacao/Linguagens/_Linguagens.md",
     "Programacao/_Programacao.md",
-    "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
+    "Programacao/DataScience/EtapasImplementacaoProj.pdf",
+    "Programacao/Assuntos_gerais/Paradigmas.md",
+    "Programacao/Assuntos_gerais/_ArqSoftware.md",
+    "Programacao/Assuntos_gerais/Configuração de rotas (PHP).md",
+    "Programacao/Linguagens/Python/Python.md",
     "Programacao/Frameworks/VueJS/Vue.md",
     "Programacao/Frameworks/Angular/Angular.md",
     "Programacao/Linguagens/AssemblyX86_64",
     "Programacao/Frameworks/_Frameworks.md",
     "Programacao/Linguagens/Java",
     "Java.md",
-    "Programacao/ArqSoftware/MVC.md",
-    "Programacao/ArqSoftware/_ArqSoftware.md",
-    "Programacao/ArqSoftware/Configuração de rotas (PHP).md",
-    "Eletronica/Componentes/Componentes.md",
-    "Eletronica/Componentes/Solda.md",
+    "Programacao/Assuntos_gerais/MVC.md",
     "Fisica/_Fisica.md",
     "Matematica/_Matematica.md",
-    "Programacao/DataScience/EtapasImplementacaoProj.pdf",
     "Programacao/DataScience/_DataScience.md",
     "Programacao/Frameworks/Angular/_imgAngular/Screenshot from 2025-01-27 07-16-09.png",
     "Programacao/Frameworks/Angular/_imgAngular/Screenshot from 2025-01-27 06-50-38.png",
@@ -202,15 +205,11 @@
     "Eletronica/_Eletronica.md",
     "Programacao/Ferramentas/Git/Git.md",
     "Eletronica/Componentes/Processadores.md",
-    "Programacao/Ferramentas/Git/GitDef.md",
-    "Programacao/Linguagens/Python/variaveis_py.md",
-    "Eletronica/fabricacaoPCB.md",
-    "Programacao/ArqSoftware",
+    "Programacao/Assuntos_gerais",
     "Eletronica/Componentes",
     "Screenshot from 2025-01-27 06-41-00.png",
     "Programacao/Frameworks/Angular/_imgAngular",
     "Programacao/Ferramentas",
-    "Programacao/Frameworks",
-    "Programacao/Linguagens"
+    "Programacao/Frameworks"
   ]
 }

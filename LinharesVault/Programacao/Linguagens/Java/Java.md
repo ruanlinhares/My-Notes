@@ -1,4 +1,4 @@
-**(Notas atualizadas em 15/07/2025)**
+**(Notas atualizadas em 17/07/2025)**
 
 # Iniciando
 ---
@@ -175,7 +175,61 @@ Aqui esta uma tabela sobre os tipos de dado e as conversões necessárias:
 	</tbody> 
 </table>
 
+### Entrada de dados
+É feita com o instanciamento de uma classe. A classe **Scanner** é responsável por fazer essa coleta de dados inseridos:
 
+```
+Scanner scan = new Scanner(System.in);
+
+#Leituras para alguns tipos
+scan.nextInt(); #tipo int
+scan.nextLine(); # String
+scan.nextDouble(); #Double
+scan.nextFloat(); #Float
+```
 
 ## Condicionais
+Em java não encontramos nada especial. As estruturas coondicionais são bastante similares as encontradas em outras linguagens de alto nível.
+
+```
+# if-else padrão
+if(condição){
+	#bloco de código
+}else if(condição){
+	#bloco de código
+}else{
+	#bloco de código
+}
+
+#Switch case
+switch(condição){
+	case x:
+		#bloco de código
+	default:
+		#bloco de código
+}
+
+#Operador ternário
+condição? valor_se_verdadeiro: valor_se_falso
+```
+
+## Repetição (Loops)
+Em java não encontramos nada especial. As estruturas de repetição e iteração são bastante similares as encontradas em outras linguagens de alto nível.
+
+```
+# iteração for
+for(Condição de partida; condição de chegada; valor de iteração){
+	#Bloco de código
+}
+
+#iteração while
+while(condição){
+	#bloco de código
+}
+
+#iteração Do-while
+do{
+	#bloco de código
+}while(condição);
+```
 
