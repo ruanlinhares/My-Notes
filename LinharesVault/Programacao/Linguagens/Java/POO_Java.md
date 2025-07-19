@@ -1,4 +1,4 @@
-**(Notas atualizadas em 17/07/2025)**
+**(Notas atualizadas em 18/07/2025)**
 
 # Iniciando
 ---
@@ -13,6 +13,7 @@
 **Herança**: é um mecanismo que permite que uma **classe herde atributos e métodos de outra classe**. É uma relação de pai para filho, uma classe derivada ou subclasse herda os atributos ou métodos de uma superclasse ou classe base.
 
 ```
+
 						  +-----------------+
 		                  |      Heroi      |
 		                  |  (Superclasse)  |
@@ -35,6 +36,7 @@
 		 	 - poder         - poder         - poder 
 			 - velocidade()  - força()       - forca() 
 							 - Voar()        - grudarNaParede()
+							 
 
 ```
 
