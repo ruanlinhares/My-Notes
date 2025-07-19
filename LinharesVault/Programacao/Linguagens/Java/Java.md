@@ -61,9 +61,9 @@ Os métodos oferecidos por essa classe são diversos. Entre eles podemos destaca
 
 ### Conversão de valores [Type Casting]
 
-Em Java, podemos ter dois tipos de conversão: **implícita** e **explícicta**.
+Em Java, podemos ter dois tipos de conversão: **implícita** e **explícita**.
 
-**Conversão implícita (Widening casting)**: Esse é o tipo de conversão mais seguro, pois o java faz o trabalho para você, sem a necessidade de um comando. Ela ocontece quando queremos converter um tipo menor para um tipo maior. Sendo assim, se quisermos converter um ```int```  e armazená-lo em uma variável do tipo ```float``` , o java se encarregará de fazer a conversão. 
+**Conversão implícita (Widening casting)**: Esse é o tipo de conversão mais seguro, pois o java faz o trabalho para você, sem a necessidade de um comando. Ela acontece quando queremos converter um tipo menor para um tipo maior. Sendo assim, se quisermos converter um ```int```  e armazená-lo em uma variável do tipo ```float``` , o java se encarregará de fazer a conversão. 
 
 ```
 #ENTRADA
@@ -87,93 +87,15 @@ System.out.println(num2)
 
 Aqui esta uma tabela sobre os tipos de dado e as conversões necessárias:
 
-<table> 
-	<thead> 
-		<tr> 
-			<th>DE \ PARA</th> 
-			<th>byte</th> 
-			<th>short</th> 
-			<th>char</th> 
-			<th>int</th> 
-			<th>long</th> 
-			<th>float</th> 
-			<th>double</th> 
-		</tr> 
-	</thead> 
-	<tbody> 
-		<tr> 
-			<th>byte</th> 
-			<td style="background-color: lightgray;"></td> 
-			<td>Implícito</td> 
-			<td>char</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-		</tr> 
-		<tr> 
-			<th>short</th> 
-			<td>byte</td> 
-			<td style="background-color: lightgray;"></td> 
-			<td>char</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-		</tr> 
-		<tr> 
-			<th>char</th> 
-			<td>byte</td> 
-			<td>short</td> 
-			<td style="background-color: lightgray;"></td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-		</tr> 
-		<tr> 
-			<th>int</th> 
-			<td>byte</td> 
-			<td>short</td> 
-			<td>char</td> 
-			<td style="background-color: lightgray;"></td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-			<td>Implícito</td> 
-			
-		</tr>
-		 <tr> 
-			 <th>long</th> 
-			 <td>byte</td> 
-			 <td>short</td> 
-			 <td>char</td> 
-			 <td>int</td> 
-			 <td style="background-color: lightgray;"></td> 
-			 <td>Implícito</td> 
-			 <td>Implícito</td> 
-		</tr> 
-		<tr> 
-			<th>float</th> 
-			<td>byte</td> 
-			<td>short</td> 
-			<td>char</td> 
-			<td>int</td> 
-			<td>long</td> 
-			<td style="background-color: lightgray;"></td> 
-			<td>Implícito</td> 
-		</tr> 
-		<tr> 
-			<th>double</th> 
-			<td>byte</td> 
-			<td>short</td> 
-			<td>char</td> 
-			<td>int</td> 
-			<td>long</td> 
-			<td>float</td> 
-			<td style="background-color: lightgray;"></td> 
-		</tr> 
-	</tbody> 
-</table>
+| DE \ PARA  | byte | short     | char | int       | long      | float     | double    |
+| ---------- | ---- | --------- | ---- | --------- | --------- | --------- | --------- |
+| **byte**   |      | Implícito | char | Implícito | Implícito | Implícito | Implícito |
+| **short**  | byte |           | char | Implícito | Implícito | Implícito | Implícito |
+| **char**   | byte | short     |      | Implícito | Implícito | Implícito | Implícito |
+| **int**    | byte | short     | char |           | Implícito | Implícito | Implícito |
+| **long**   | byte | short     | char | int       |           | Implícito | Implícito |
+| **float**  | byte | short     | char | int       | long      |           | Implícito |
+| **double** | byte | short     | char | int       | long      | float     |           |
 
 ### Entrada de dados
 É feita com o instanciamento de uma classe. A classe **Scanner** é responsável por fazer essa coleta de dados inseridos:
@@ -189,7 +111,7 @@ scan.nextFloat(); #Float
 ```
 
 ## Condicionais
-Em java não encontramos nada especial. As estruturas coondicionais são bastante similares as encontradas em outras linguagens de alto nível.
+Em java não encontramos nada especial. As estruturas condicionais são bastante similares as encontradas em outras linguagens de alto nível.
 
 ```
 # if-else padrão
