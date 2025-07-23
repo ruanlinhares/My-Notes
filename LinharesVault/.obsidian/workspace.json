@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Programacao/Linguagens/Java/POO_Java.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -174,18 +174,22 @@
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
     "Programacao/Linguagens/Java/Java.md",
+    "Programacao/Linguagens/Java/POO_Java.md",
+    "Programacao/Assuntos_gerais/Paradigmas.md",
+    "Programacao/Assuntos_gerais/_ArqSoftware.md",
+    "Programacao/OS/Arq_OS.md",
+    "Programacao/OS/Linux/Linux_Fedora.md",
+    "Programacao/OS/Linux",
+    "Programacao/OS",
     "Programacao/Linguagens/Python/Python.md",
     "Programacao/Frameworks/VueJS/Vue.md",
     "Programacao/Linguagens/AssemblyX86_64/AssemblyX86_64.md",
-    "Programacao/Linguagens/Java/POO_Java.md",
     "Eletronica/Componentes/Solda.md",
     "Eletronica/Untitled",
     "Eletronica/Componentes/Componentes.md",
     "Programacao/Linguagens/_Linguagens.md",
     "Programacao/_Programacao.md",
     "Programacao/DataScience/EtapasImplementacaoProj.pdf",
-    "Programacao/Assuntos_gerais/Paradigmas.md",
-    "Programacao/Assuntos_gerais/_ArqSoftware.md",
     "Programacao/Assuntos_gerais/Configuração de rotas (PHP).md",
     "Programacao/Frameworks/Angular/Angular.md",
     "Programacao/Linguagens/AssemblyX86_64",
@@ -204,12 +208,9 @@
     "().md",
     "Eletronica/_Eletronica.md",
     "Programacao/Ferramentas/Git/Git.md",
-    "Eletronica/Componentes/Processadores.md",
     "Programacao/Assuntos_gerais",
     "Eletronica/Componentes",
     "Screenshot from 2025-01-27 06-41-00.png",
-    "Programacao/Frameworks/Angular/_imgAngular",
-    "Programacao/Ferramentas",
-    "Programacao/Frameworks"
+    "Programacao/Frameworks/Angular/_imgAngular"
   ]
 }

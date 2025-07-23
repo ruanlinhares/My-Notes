@@ -1,4 +1,4 @@
-**(Notas atualizadas em 22/07/2025)**
+**(Notas atualizadas em 23/07/2025)**
 
 # Iniciando
 ---
@@ -33,15 +33,29 @@ public class ClasseJava{
 
 ### Instanciação de objetos
 
-```
+Após a criação das classes, é necessário fazer a instanciação de um objeto para dentro de uma variável do mesmo tipo da classe criada. Observe:
 
 ```
+public class Animal{
+	#bloco de código;
+}
 
+# fazendo a instanciação na main
+
+Animal animal1 = new Animal();
+```
+
+Perceba que acima criamos uma variável chamada ```animal1``` do tipo por referência ```Animal```. Dentro dela faremos um ponteiro para um novo objeto do tipo ```Animal```. Chamamos, agora, as classes criadas de tipos por referência, pois a variável não armazena o objeto em si, mas sim uma referência (endereço na memória) para onde o objeto ```Animal``` está armazenado.
 ## Pilares do POO
 
 **Abstração**: é o processo de **descrever um objeto** por meio de suas características (atributos), ações e comportamentos (métodos).
 
-**Encapsulamento**: é a prática de **ocultar is detalhes de uma classe** , como atributos e métodos. Podemos controlar quem ou o que pode acessar os detalhes desta classe por meu de métodos definidos dentro da própria classe.
+**Encapsulamento**: é a prática de **ocultar is detalhes de uma classe** , como atributos e métodos. Podemos controlar quem ou o que pode acessar os detalhes desta classe por meu de métodos definidos dentro da própria classe. Para isso, necessitamos de artifícios chamados de **Controladores de acesso**, eles dividem-se em 3 mais usados:
+
+**Public**: com esse modificador, o acesso é livre em qualquer lugar do programa, qualquer um pode acessar o atributo, método ou classe que foi intitulado de ```public```.
+
+**Protect**:
+**Private**:
 
 **Herança**: é um mecanismo que permite que uma **classe herde atributos e métodos de outra classe**. É uma relação de pai para filho, uma classe derivada ou subclasse herda os atributos ou métodos de uma superclasse ou classe base.
 
