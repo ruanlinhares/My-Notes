@@ -1,3 +1,4 @@
+**(Notas atualizadas em 05/08/2025)**
 # Python - Variáveis e tipos
 ---
 
