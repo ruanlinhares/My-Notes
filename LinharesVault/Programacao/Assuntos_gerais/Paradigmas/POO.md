@@ -48,9 +48,13 @@ Animal animal1 = new Animal();
 Perceba que acima criamos uma variável chamada ```animal1``` do tipo por referência ```Animal```. Dentro dela faremos um ponteiro para um novo objeto do tipo ```Animal```. Chamamos, agora, as classes criadas de tipos por referência, pois a variável não armazena o objeto em si, mas sim uma referência (endereço na memória) para onde o objeto ```Animal``` está armazenado.
 ## Pilares do POO
 
-**Abstração**: é o processo de **descrever um objeto** por meio de suas características (atributos), ações e comportamentos (métodos).
+### Abstração
 
-**Encapsulamento**: é a prática de **ocultar is detalhes de uma classe** , como atributos e métodos. Podemos controlar quem ou o que pode acessar os detalhes desta classe por meu de métodos definidos dentro da própria classe. Para isso, necessitamos de artifícios chamados de **Controladores de acesso**, eles dividem-se em 3 mais usados:
+É o processo de **descrever um objeto** por meio de suas características (atributos), ações e comportamentos (métodos).
+
+### Encapsulamento
+
+É a prática de **ocultar is detalhes de uma classe** , como atributos e métodos. Podemos controlar quem ou o que pode acessar os detalhes desta classe por meu de métodos definidos dentro da própria classe. Para isso, necessitamos de artifícios chamados de **Controladores de acesso**, eles dividem-se em 3 mais usados:
 
 **Public**: com esse modificador, o acesso aos membros de uma classe(atributos e métodos) é **totalmente liberado**. Eles podem ser acessados de qualquer lugar do programa: pela **própria classe**, por **suas subclasses** ou por **classes externas**.
 
@@ -63,9 +67,44 @@ Perceba que acima criamos uma variável chamada ```animal1``` do tipo por refer�
 | **Public**         | sim            | sim            | sim              |
 | **Protect**        | sim            | sim            | não              |
 | **Private**        | sim            | não            | não              |
+**Setters**
 
+Em programação, um setter é um método que modifica um valor, seu objetivo em **POO** é modificar o valor das propriedades de um objeto. Ele é parte fundamental do conceito de **encapsulamento.** Geralmente, tem a nomenclatura do método escrita dessa maneira: setalgumAtributo(). O setter recebe um parametro que será o novo valor da variável de instância. Estrutura de um setter:
 
-**Herança**: é um mecanismo que permite que uma **classe herde atributos e métodos de outra classe**. É uma relação de pai para filho, uma classe derivada ou subclasse herda os atributos ou métodos de uma superclasse ou classe base.
+```jsx
+private String poder;
+
+public void setpoder(String poder){
+	this.poder = poder;
+}
+```
+
+O termo **this** é opcional, é usado para diferenciar a **variável do objeto atual** de um **parâmetro de método com mesmo nome**. O compilador fica consfuso sobre quem está atribuindo valor a quem. Mas poderiamos reescrever assim:
+
+```jsx
+// Certo!!!!
+//-----------
+
+private String poder;
+
+public void setpoder(String novoPoder){
+	poder = novoPoder
+}
+
+// Erro de compilação
+//---------------------
+private String poder;
+
+public void setpoder(String poder){
+	poder = poder
+}
+```
+
+Podemos fazer blocos de código dentro do setter que permita ou negue essa atribuição de valor. Utilizando condicionais, repetições (loops) e métodos, podemos fazer regras para permitir e negar essa alterção de atributos.
+
+### Herança
+
+É um mecanismo que permite que uma **classe herde atributos e métodos de outra classe**. É uma relação de pai para filho, uma classe derivada ou subclasse herda os atributos ou métodos de uma superclasse ou classe base.
 
 ```
 
@@ -95,7 +134,9 @@ Perceba que acima criamos uma variável chamada ```animal1``` do tipo por refer�
 
 ```
 
-**Polimorfismo**: é a capacidade de **objetos de diferentes classes serem tratados como objetos de uma classe em comum**.
+### Polimorfismo
+
+É a capacidade de **objetos de diferentes classes serem tratados como objetos de uma classe em comum**.
 
 **Sem polimorfismo**, você teria que escrever:
 
