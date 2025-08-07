@@ -67,6 +67,7 @@ Perceba que acima criamos uma variável chamada ```animal1``` do tipo por refer�
 | **Public**         | sim            | sim            | sim              |
 | **Protect**        | sim            | sim            | não              |
 | **Private**        | sim            | não            | não              |
+
 **Setters**
 
 Em programação, um setter é um método que modifica um valor, seu objetivo em **POO** é modificar o valor das propriedades de um objeto. Ele é parte fundamental do conceito de **encapsulamento.** Geralmente, tem a nomenclatura do método escrita dessa maneira: setalgumAtributo(). O setter recebe um parametro que será o novo valor da variável de instância. Estrutura de um setter:
