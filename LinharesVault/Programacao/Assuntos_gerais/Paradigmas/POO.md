@@ -1,4 +1,4 @@
-**(Notas atualizadas em 05/08/2025)**
+**(Notas atualizadas em 06/08/2025)**
 
 # Iniciando
 ---
@@ -9,24 +9,24 @@
 
 A estrutura central para a orientação a objetos é a classe. A classe é composta por métodos (funções) e atributos (variáveis), os quais nos aplicar o conceito de abstração. **Abstração** é o ato de descrever um objeto com base nas suas **características** (atributos), **ações** e **comportamentos** (métodos).
 
-```
+```JSX
 public class ClasseJava{
 	
-	#Descrevendo um características de um objeto com variáveis
+	//Descrevendo um características de um objeto com variáveis
 	
 	String atributo1 = valor1;
 	int atributo2;
 	boolean atributo3 = valor3;
 	double atrubuto4;
 
-	#Descrevendo ações e comportamentos de um objeto com métodos
+	//Descrevendo ações e comportamentos de um objeto com métodos
 	
 	public int acao1(int parâmetro){
-		#bloco de código
+		//bloco de código
 	}
 
 	public String comportamento1(){
-		#bloco de código
+		//bloco de código
 	}
 }
 ```
@@ -35,12 +35,12 @@ public class ClasseJava{
 
 Após a criação das classes, é necessário fazer a instanciação de um objeto para dentro de uma variável do mesmo tipo da classe criada. Observe:
 
-```
+```JSX
 public class Animal{
-	#bloco de código;
+	//bloco de código;
 }
 
-# fazendo a instanciação na main
+//fazendo a instanciação na main
 
 Animal animal1 = new Animal();
 ```
@@ -88,7 +88,7 @@ O termo **this** é opcional, é usado para diferenciar a **variável do objeto 
 private String poder;
 
 public void setpoder(String novoPoder){
-	poder = novoPoder
+	poder = novoPoder;
 }
 
 // Erro de compilação
@@ -96,11 +96,11 @@ public void setpoder(String novoPoder){
 private String poder;
 
 public void setpoder(String poder){
-	poder = poder
+	poder = poder;
 }
 ```
 
-Podemos fazer blocos de código dentro do setter que permita ou negue essa atribuição de valor. Utilizando condicionais, repetições (loops) e métodos, podemos fazer regras para permitir e negar essa alterção de atributos.
+Podemos fazer blocos de código dentro do setter que permita ou negue essa atribuição de valor. Utilizando condicionais, repetições (loops) e métodos, podemos fazer regras para permitir e negar essa alteração de atributos.
 
 ### Herança
 
@@ -134,6 +134,28 @@ Podemos fazer blocos de código dentro do setter que permita ou negue essa atrib
 
 ```
 
+Podemos fazer essa herança a partir do de um termo chamado ```extends```, ele é usado na declaração de uma classe para informar de qual superclasse ele estará herdando. Uma classe somente pode herdar de uma outra única classe, uma relação de 1 para 1. Exemplo:
+
+```JSX
+//Superclasse exemplo
+public class Animal{
+	String atributo1;
+	int atributo2;
+
+	public void metodo1(){}
+	pulbic int metodo2(){}
+}
+
+//subclasse exemplo
+
+public class Cachorro extends Animal{
+	String atributo1;
+	
+	public void metodo1(){}
+	pulbic int metodo2(){}
+}
+
+```
 ### Polimorfismo
 
 É a capacidade de **objetos de diferentes classes serem tratados como objetos de uma classe em comum**.
@@ -154,7 +176,7 @@ No geral, é a ideia de um mesmo nome ou comando ter muitas formas de comporta-s
 
 **Polimorfismo estático**: está relacionado a sobrecarga de métodos ou operadores. A sobrecarga é um artifício que permite que vários métodos de uma classe tenham o mesmo nome, mas isso somente é possível se a lista de parâmetros para cada método for diferente. Se houver algum erro ele é resolvido durante o tempo de compilação, por isso o nome estático.
 
-```
+```jsx
 int soma(int a, int b);
 void soma(float a, double b);
 int soma(int a, int b, int c);
@@ -162,7 +184,7 @@ int soma(int a, int b, int c);
 
 **Polimorfismo dinâmico**: está relacionado a sobrescrita de métodos. A sobrescrita permite que façamos alteração de métodos em subclasses, ou seja, reescrever uma método que foi herdado da superclasse, dando um outro sentido ou comportamento para ele. Lembrando que os parâmetros e retorno do método tem que permanecer os mesmos da classe pai. Caso ocorra um erro, será identificado durante o tempo de execução.
 
-```
+```JSX
 public class Animal{
 	public void fazerBarulho(){
 		System.out.println("Animal faz barulhos);
@@ -172,9 +194,12 @@ public class Animal{
 public class Cachorro extends Animal{
 
 	//sobrescrevendo o método fazerBarulho()
-	@override //anotação opcional, porém é uma boa prática.
+	@Override //anotação opcional, porém é uma boa prática.
 	public void fazerBarulho(){
 		System.out.println("AU AU AU");
 	}
 }
 ```
+
+
+## Interfaces

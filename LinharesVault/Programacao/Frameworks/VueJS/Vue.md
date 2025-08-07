@@ -1,24 +1,24 @@
-**(Notas atualizadas em 10/07/2025)**
+**(Notas atualizadas em 06/08/2025)**
 # Iniciando
 ---
 
 Utilize o comando abaixo para adicionar o Vue ao gerenciador de pacotes:
 
-```
+```JSX
 npm install vue
 ```
 
 Após criar o diretório ou clonar um repositório escreva esse comando no seu shell para criar um app vue, podemos usar o vue/cli ou vite:
 
-```
-npm create vue@latest # cria o app via vue/cli
+```JSX
+npm create vue@latest //cria o app via vue/cli
 
-npm create vite@latest # cria o app via vite
+npm create vite@latest //cria o app via vite
 ```
 
 Assim que o app for criado é necessário passar o seguinte comando ao shell, faça isso dentro da pasta do projeto vue:
 
-```
+```JSX
 npm install
 ```
 
@@ -30,7 +30,7 @@ O vue é um framework baseado na montagem de componentes visuais. Ele utiliza um
 
 Estrutura básica de um arquivo ```.vue```:
 
-```
+```JSX
 <template>
 	Seu código HTML
 </template>
@@ -50,7 +50,7 @@ No **Vue** trabalhamos diretamente com a importação de componentes. Botões s�
 
 Na tag ```<script>``` de cada arquivo ```.vue``` poderemos fazer a chamada de outros componentes:
 
-```
+```JSX
 <script>
 #importa o modulo (componente) desejado
 import nome-do-componente from ./path/do/componente
@@ -77,7 +77,7 @@ Diretivas são instruções que o **Vue** atribui aos elementos HTML. As diretiv
 
 Podemos usar diretivas de condicional par mudar o estado de um elemento html ou ocultá-lo.
 
-```
+```JSX
 import ImageLogo from ./components/ImageLogo.vue
 import AdminTab from ./components/AdminTab.vue
 import DeveloperTab from ./components/DeveloperTab.vue

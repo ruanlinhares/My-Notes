@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Assuntos_gerais/Paradigmas/POO.md",
-                "mode": "preview",
+                "file": "Programacao/Frameworks/VueJS/Vue.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "POO"
+              "title": "Vue"
             }
           }
         ]
@@ -171,14 +171,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed21ed78594de41f",
+  "active": "f20193b45f24eb6f",
   "lastOpenFiles": [
+    "Programacao/Assuntos_gerais/Paradigmas/POO.md",
+    "Programacao/Frameworks/VueJS/Vue.md",
     "Programacao/Assuntos_gerais/Configuração de rotas (PHP).md",
     "Programacao/Assuntos_gerais/MVC.md",
     "Programacao/Linguagens/Java.md",
     "Programacao/Linguagens/Python.md",
     "Programacao/Linguagens/AssemblyX86_64.md",
-    "Programacao/Assuntos_gerais/Paradigmas/POO.md",
     "Programacao/Linguagens/_Linguagens.md",
     "Programacao/_Programacao.md",
     "Programacao/OS/Arq_OS.md",
@@ -191,7 +192,6 @@
     "Programacao/Assuntos_gerais/_ArqSoftware.md",
     "Programacao/OS/Linux",
     "Programacao/OS",
-    "Programacao/Frameworks/VueJS/Vue.md",
     "Eletronica/Componentes/Solda.md",
     "Eletronica/Untitled",
     "Eletronica/Componentes/Componentes.md",
