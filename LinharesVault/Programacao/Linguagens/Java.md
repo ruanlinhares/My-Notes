@@ -27,16 +27,16 @@ Java é uma linguagem estaticamente tipada, isso significa que o programador dev
 
 Exemplo de alguns tipos essenciais em java:
 
-```
-# Classe para valores em textos
+```JAVA
+//Classe para valores em textos
 String nome = "Mark Grayson";
 
-#tipo para valores inteiros e decimais
+//tipos para valores inteiros e decimais
 int idade = 17;
 double forca = 57.03;
 float velocidade = 35.00f; # valores float devem ser acompanhados por "f" ou "F"  
 
-#tipos para valores booleanos
+//tipos para valores booleanos
 boolean viltrumita = true;
 ```
 
