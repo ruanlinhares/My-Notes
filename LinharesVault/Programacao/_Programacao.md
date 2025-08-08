@@ -5,4 +5,4 @@
 # Relacionados
 
 [[_ArqSoftware]]
-[[_DataScience]]
+[[_Paradigmas]]

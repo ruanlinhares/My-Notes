@@ -9,7 +9,7 @@
 
 A estrutura central para a orientação a objetos é a classe. A classe é composta por métodos (funções) e atributos (variáveis), os quais nos aplicar o conceito de abstração. **Abstração** é o ato de descrever um objeto com base nas suas **características** (atributos), **ações** e **comportamentos** (métodos).
 
-```JSX
+```JAVA
 public class ClasseJava{
 	
 	//Descrevendo um características de um objeto com variáveis
@@ -35,7 +35,7 @@ public class ClasseJava{
 
 Após a criação das classes, é necessário fazer a instanciação de um objeto para dentro de uma variável do mesmo tipo da classe criada. Observe:
 
-```JSX
+```JAVA
 public class Animal{
 	//bloco de código;
 }
@@ -70,9 +70,9 @@ Perceba que acima criamos uma variável chamada ```animal1``` do tipo por refer�
 
 **Setters**
 
-Em programação, um setter é um método que modifica um valor, seu objetivo em **POO** é modificar o valor das propriedades de um objeto. Ele é parte fundamental do conceito de **encapsulamento.** Geralmente, tem a nomenclatura do método escrita dessa maneira: setalgumAtributo(). O setter recebe um parametro que será o novo valor da variável de instância. Estrutura de um setter:
+Em programação, um setter é um método que modifica um valor, seu objetivo em **POO** é modificar o valor das propriedades de um objeto. Ele é parte fundamental do conceito de **encapsulamento.** Geralmente, tem a nomenclatura do método escrita dessa maneira: setAtributo(). O setter recebe um parâmetro que será o novo valor da variável de instância. Estrutura de um setter:
 
-```jsx
+```JAVA
 private String poder;
 
 public void setpoder(String poder){
@@ -80,9 +80,9 @@ public void setpoder(String poder){
 }
 ```
 
-O termo **this** é opcional, é usado para diferenciar a **variável do objeto atual** de um **parâmetro de método com mesmo nome**. O compilador fica consfuso sobre quem está atribuindo valor a quem. Mas poderiamos reescrever assim:
+O termo **this** é opcional, é usado para diferenciar a **variável do objeto atual** de um **parâmetro de método com mesmo nome**. O compilador fica confuso sobre quem está atribuindo valor a quem. Mas poderíamos reescrever assim:
 
-```jsx
+```JAVA
 // Certo!!!!
 //-----------
 
@@ -137,7 +137,7 @@ Podemos fazer blocos de código dentro do setter que permita ou negue essa atrib
 
 Podemos fazer essa herança a partir do de um termo chamado ```extends```, ele é usado na declaração de uma classe para informar de qual superclasse ele estará herdando. Uma classe somente pode herdar de uma outra única classe, uma relação de 1 para 1. Exemplo:
 
-```JSX
+```JAVA
 //Superclasse exemplo
 public class Animal{
 	String atributo1;
@@ -177,7 +177,7 @@ No geral, é a ideia de um mesmo nome ou comando ter muitas formas de comporta-s
 
 **Polimorfismo estático**: está relacionado a sobrecarga de métodos ou operadores. A sobrecarga é um artifício que permite que vários métodos de uma classe tenham o mesmo nome, mas isso somente é possível se a lista de parâmetros para cada método for diferente. Se houver algum erro ele é resolvido durante o tempo de compilação, por isso o nome estático.
 
-```jsx
+```JAVA
 int soma(int a, int b);
 void soma(float a, double b);
 int soma(int a, int b, int c);
@@ -185,7 +185,7 @@ int soma(int a, int b, int c);
 
 **Polimorfismo dinâmico**: está relacionado a sobrescrita de métodos. A sobrescrita permite que façamos alteração de métodos em subclasses, ou seja, reescrever uma método que foi herdado da superclasse, dando um outro sentido ou comportamento para ele. Lembrando que os parâmetros e retorno do método tem que permanecer os mesmos da classe pai. Caso ocorra um erro, será identificado durante o tempo de execução.
 
-```JSX
+```JAVA
 public class Animal{
 	public void fazerBarulho(){
 		System.out.println("Animal faz barulhos);
@@ -201,6 +201,3 @@ public class Cachorro extends Animal{
 	}
 }
 ```
-
-
-## Interfaces

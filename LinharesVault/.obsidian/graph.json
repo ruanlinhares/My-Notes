@@ -8,65 +8,44 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "file:Programacao",
+      "query": "path:Programacao/Linguagens  ",
       "color": {
         "a": 1,
-        "rgb": 16514847
+        "rgb": 14701138
       }
     },
     {
-      "query": "file:_Linguagens  ",
+      "query": "file:_Programacao",
       "color": {
         "a": 1,
-        "rgb": 16514847
+        "rgb": 16736701
       }
     },
     {
-      "query": "path:Programacao/Frameworks  ",
+      "query": "file:_Eletronica",
       "color": {
         "a": 1,
-        "rgb": 2031360
+        "rgb": 16736701
       }
     },
     {
-      "query": "path:Programacao/Ferramentas  ",
+      "query": "path:Programacao/Frameworks",
       "color": {
         "a": 1,
-        "rgb": 2031360
-      }
-    },
-    {
-      "query": "file:Eletronica  ",
-      "color": {
-        "a": 1,
-        "rgb": 16514847
-      }
-    },
-    {
-      "query": "path:Eletronica/Componentes  ",
-      "color": {
-        "a": 1,
-        "rgb": 14942453
-      }
-    },
-    {
-      "query": "file:fabricacaoPCB",
-      "color": {
-        "a": 1,
-        "rgb": 14942453
+        "rgb": 5431378
       }
     }
   ],
-  "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": -3,
-  "nodeSizeMultiplier": 0.993229166666667,
-  "lineSizeMultiplier": 1.784375,
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 0.865625,
+  "lineSizeMultiplier": 1.52916666666667,
   "collapse-forces": false,
-  "centerStrength": 0.453125,
-  "repelStrength": 9.6875,
-  "linkStrength": 1,
-  "linkDistance": 113,
+  "centerStrength": 0.291666666666667,
+  "repelStrength": 6.14583333333333,
+  "linkStrength": 0.609375,
+  "linkDistance": 30,
   "scale": 0.6757621765136719,
   "close": true
 }
