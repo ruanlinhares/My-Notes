@@ -1,4 +1,4 @@
-**(Notas atualizadas em 07/08/2025)**
+**(Notas atualizadas em 13/08/2025)**
 
 # Iniciando
 ---
@@ -205,3 +205,111 @@ public class Kriptoniano implements Poderes{
 ```
 
 Uma classe tem por obrigatoriedade utilizar todos os métodos da interface que ela consome. Caso não necessite de um método, poderá fazer uma **implementação vazia** (Quando chamo um método mas não passo escopo para ele) ou **lançar uma exception** dentro do método não desejado.
+
+Em java as coleções são estruturas de dados que servem para agrupar e gerenciar múltiplos objetos de forma eficiente. Foi implementado a partir do java 2 no pacote java.util.
+
+## Arraylist
+
+É uma classe em java que é baseada em um array dinâmico e extremamente rápido. Podemos declarar o Arraylist da seguinte forma:
+
+```java
+Arraylist<tipo do elemento> listaDeElementos = new Arraylist<>();
+// O tipo do elemento pode ser um tipo primitivo(int, double, ) ou um tipo por referência(classe)
+Arraylist<int> listaDeNúmeros = new Arraylist<>();
+```
+
+Para a classe Arraylist, existem métodos que permitem adicionar elementos a lista, remover da lista, capturar posições, etc. Exemplos: .add(), .get(), .size().
+
+## Construtor
+
+É um método especial que é invocado no momento que um objeto é criado. Sua principal finalidade é inicializar o objeto e definir valores para suas variáveis. Ela está relacionada a alocação de memória do objeto, mas não é sua função principal. Inicialmente, criamos um objeto com um construtor padrão. Esse construtor não recebe nenhum parâmetro, não faz nada além de criar um objeto:
+
+```java
+//construtor não recebe parametros
+Heroi batman = new Heroi();
+```
+
+Mas também, podemos criar um contrutor explícito que é escrito dentro da classe de origem. Ele pode receber um ou mais parâmetros:
+
+```java
+//classe Heroi
+public class Heroi{
+	private String nome;
+	private String poder;
+	
+	
+	public void setNome(String nome){
+		this.nome = nome;
+	}
+	
+	public void setNome(String poder){
+		this.poder = poder;
+	}
+	
+	//construtor explícito
+	public Heroi(String nome, String poder){
+		this.setNome(nome);
+		this.setPoder(poder);
+	}
+}
+
+//classe Principal
+public class Main{
+	public static void main(Sting[] args){
+		//instanciando objeto utilizando o constutor explícito
+		Heroi batman = new Heroi("Batman", "Dinheiro");
+	}
+}
+
+```
+
+Além disso, temos a possibilidade de **sobrecarregar construtor** (constructor overloading) com outras versões que possuem mais ou menos parâmetros. O java reconhece o método construtor que o programador gostaria de invocar **pelo número e tipo de seus parâmetros** (sua assinatura).
+
+```java
+public class Heroi{
+	private String nome;
+	private String poder;
+	
+	
+	public void setNome(String nome){
+		this.nome = nome;
+	}
+	
+	public void setNome(String poder){
+		this.poder = poder;
+	}
+	
+	//sobrecarga de construtor
+	public Heroi(){
+	}
+	
+	public Heroi(String nome){
+		this.setNome(nome);
+	}
+	
+	public Heroi(String nome, String poder){
+		this.setNome(nome);
+		this.setPoder(poder);
+	}
+}
+```
+Ao criar um construtor de uma classe herdada devemos utilizar o método **super()**. Ele pode ser usado de duas maneiras:
+
+**Chamar um método da classe pai**: caso necessário estender um método da classe pai e manter sua funcionaliadade para implementações. Somente é necessário utilizar super 
+
+```java
+public class Veiculo{
+	public void buzinar(){
+		System.out.println("Som de buzina");
+	}
+}
+
+public class Carro extends Veiculo{
+	@Override
+	public void buzinar(){
+		super.buzina;
+		System.ou.println("Beep Beep!");
+	}
+} 
+```
+
