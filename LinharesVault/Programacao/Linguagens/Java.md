@@ -208,18 +208,17 @@ Uma classe tem por obrigatoriedade utilizar todos os métodos da interface que e
 
 Em java as coleções são estruturas de dados que servem para agrupar e gerenciar múltiplos objetos de forma eficiente. Foi implementado a partir do java 2 no pacote java.util.
 
-## Arraylist
+## ArrayList
 
-É uma classe em java que é baseada em um array dinâmico e extremamente rápido. Podemos declarar o Arraylist da seguinte forma:
+É uma classe em java que é baseada em um array dinâmico e extremamente rápido. Podemos declarar o ArrayList da seguinte forma:
 
 ```java
-Arraylist<tipo do elemento> listaDeElementos = new Arraylist<>();
-// O tipo do elemento pode ser um tipo primitivo(int, double, ) ou um tipo por referência(classe)
-Arraylist<int> listaDeNúmeros = new Arraylist<>();
+Arraylist<tipoDoElemento> listaDeElementos = new Arraylist<>();
+// O tipo do elemento pode ser  um tipo por referência(classe) ou uma classe wrapper(Integer, Double, Float) para tipos primitivos.
+Arraylist<Integer> listaDeInteiros = new Arraylist<>();
 ```
 
-Para a classe Arraylist, existem métodos que permitem adicionar elementos a lista, remover da lista, capturar posições, etc. Exemplos: .add(), .get(), .size().
-
+Para a classe ArrayList, existem métodos que permitem adicionar elementos a lista, remover da lista, capturar posições, etc. Exemplos: .add(), .get(), .size().
 ## Construtor
 
 É um método especial que é invocado no momento que um objeto é criado. Sua principal finalidade é inicializar o objeto e definir valores para suas variáveis. Ela está relacionada a alocação de memória do objeto, mas não é sua função principal. Inicialmente, criamos um objeto com um construtor padrão. Esse construtor não recebe nenhum parâmetro, não faz nada além de criar um objeto:
@@ -293,9 +292,10 @@ public class Heroi{
 	}
 }
 ```
+
 Ao criar um construtor de uma classe herdada devemos utilizar o método **super()**. Ele pode ser usado de duas maneiras:
 
-**Chamar um método da classe pai**: caso necessário estender um método da classe pai e manter sua funcionaliadade para implementações. Somente é necessário utilizar super 
+**Chamar um método da classe pai**: caso necessário estender um método da classe pai e manter sua funcionalidade para implementações. Somente é necessário utilizar super 
 
 ```java
 public class Veiculo{
@@ -307,9 +307,35 @@ public class Veiculo{
 public class Carro extends Veiculo{
 	@Override
 	public void buzinar(){
-		super.buzina;
+		//chamando método original da classe pai
+		super.buzinar();
 		System.ou.println("Beep Beep!");
 	}
 } 
 ```
 
+**Chamar um construtor da classe pai**: é um conceito conhecido como encadeamento de construtores. Sempre que uma classe pai tiver um construtor com parâmetros dever ser usado o método super.
+
+```java
+public class Veiculo{
+	public String id
+	public String nome;
+	
+	public Veiculo(String id, String nome){
+		this.id = id;
+		this.nome = nome;
+	}
+}
+
+public class Carro extends Veiculo{
+	public String modelo;
+	public int anoLancamento;
+	
+	public Carro(String id, String nome, String modelo, int anoLancamento){
+		// chamando constutor da classe pai
+		super(id, nome);
+		this.modelo = modelo;
+		this.anoLancamento = anoLancamento;
+	}
+} 
+```
