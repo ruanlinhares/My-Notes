@@ -219,6 +219,7 @@ Arraylist<Integer> listaDeInteiros = new Arraylist<>();
 ```
 
 Para a classe ArrayList, existem métodos que permitem adicionar elementos a lista, remover da lista, capturar posições, etc. Exemplos: .add(), .get(), .size().
+
 ## Construtor
 
 É um método especial que é invocado no momento que um objeto é criado. Sua principal finalidade é inicializar o objeto e definir valores para suas variáveis. Ela está relacionada a alocação de memória do objeto, mas não é sua função principal. Inicialmente, criamos um objeto com um construtor padrão. Esse construtor não recebe nenhum parâmetro, não faz nada além de criar um objeto:
@@ -339,3 +340,7 @@ public class Carro extends Veiculo{
 	}
 } 
 ```
+
+## Variáveis por referência
+## Comparable
+### Algoritmo TimSort()
