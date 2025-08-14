@@ -6,3 +6,5 @@
 
 [[_ArqSoftware]]
 [[_Paradigmas]]
+[[_Algorithms]]
+[[_Data_Structure]]

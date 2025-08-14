@@ -1,4 +1,4 @@
-**(Notas atualizadas em 13/08/2025)**
+**(Notas atualizadas em 14/08/2025)**
 
 # Iniciando
 ---
@@ -341,6 +341,18 @@ public class Carro extends Veiculo{
 } 
 ```
 
+# Consumo de API
+
+
+# Extra knowledge
+---
+## Interface Collection<>
+### Classe Collections
+## Interface Set<>
+## Interface Map<>
+### Classe HashMap
 ## Variáveis por referência
-## Comparable
+## Interface Comparable<>
 ### Algoritmo TimSort()
+
+Caso queira explorar a documentação do Java acesse: [Java Docs](https://docs.oracle.com/en/java/)
