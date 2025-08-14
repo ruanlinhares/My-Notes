@@ -341,9 +341,6 @@ public class Carro extends Veiculo{
 } 
 ```
 
-# Consumo de API
-
-
 # Extra knowledge
 ---
 ## Interface Collection<>
