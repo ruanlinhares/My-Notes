@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:Programacao/Linguagens  ",
@@ -34,6 +34,13 @@
         "a": 1,
         "rgb": 5431378
       }
+    },
+    {
+      "query": "path:Programacao/Assuntos_gerais/Data_Structure  ",
+      "color": {
+        "a": 1,
+        "rgb": 3455998
+      }
     }
   ],
   "collapse-display": true,
@@ -46,6 +53,6 @@
   "repelStrength": 6.14583333333333,
   "linkStrength": 0.609375,
   "linkDistance": 30,
-  "scale": 0.6757621765136719,
+  "scale": 0.6757621765136724,
   "close": true
 }
