@@ -81,7 +81,7 @@ System.out.println(num1)
 int num2 = (int) 34.06; #conversão explícita de double para int
 System.out.println(num2)
 
-#SAÍDA
+//SAÍDA
 35
 ```
 
