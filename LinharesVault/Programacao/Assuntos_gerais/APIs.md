@@ -57,19 +57,23 @@ Authorization: Bearer <seu-token-de-acesso>
 
 ### Respostas
 
-Toda vez que o cliente (aplicação) envia uma requisição
+Toda vez que o cliente (aplicação) envia uma requisição para o servidor (API) ela devolve uma resposta, chamamos esta de **código de status**. O status pode é um número que responde o que ocorreu com nossa requisição após envio, ele pode ser dividido em 5 categorias:
+
+**1xx**:
+**2xx**:
+**3xx**:
+**4xx**:
+**5xx**:
 
 # Essencial
 ---
+## Comunicação com a API
+No geral, as linguagens e frameworks tem bibliotecas para facilitar a integração da API com a aplicação.Exemplos:
 
-## Consumo de API
+**JAVA**: [Biblioteca HTTPRequest](https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpRequest.html) / [Biclioteca HTTPResponse](https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.html)
 
-### JSON
-
-## API Key
-
-### Query String
+## Tipos de APIs
 
 # Extra knowledge
 ---
-
+**MAVEN Repository** (Repositório de bibliotecas java): [MVN Repository](https://mvnrepository.com/) 
