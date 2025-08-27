@@ -37,7 +37,7 @@ Como funciona isso? Uma classe virar tabela? Temos a possibilidade de fazer isso
 Não é aconselhável que ela contenha a lógica de negócios. Pois isso deixa o código mais complexo de gerenciar, então, se você tiver um problema na lógica, terá que alterar muitas partes da classe. Como as classes do model são utilizadas por outas classes da aplicação, dependendo do sistema, você pode ter um grande problema.
 
 ### DAOs ou Repositórios
-São classes responsáveis por interagir diretamente com o bando de dados
+São classes responsáveis por interagir diretamente com o banco de dados através
 
 
 
