@@ -341,13 +341,19 @@ public class Carro extends Veiculo{
 } 
 ```
 
-## Exceptions
+
+### Classe Exception (deriva Classe Throwable)
 
 A exception é um evento que ocorre durante a execução de um programa que interrompe o fluxo normal das instruções. Elas indicam um erro, problema ou comportamento anormal que pode ou deve ser tratado. Temos dois tipos de Exception:
 
 **Checked Exceptions**: essas são exceptions que o compilador do java nos obriga a tratar.
 
 **Unchecked Exceptions**:
+
+#### Exceptions personalizadas
+
+### Persistência de dados
+
 # Extra knowledge
 ---
 ## Record
