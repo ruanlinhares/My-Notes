@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Assuntos_gerais/MVC.md",
+                "file": "Programacao/Linguagens/Java.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MVC"
+              "title": "Java"
             }
           }
         ]
@@ -163,6 +163,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -173,9 +174,9 @@
   },
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
+    "Programacao/Assuntos_gerais/MVC.md",
     "Programacao/Frameworks/Flutter.md",
     "Programacao/Linguagens/Dart.md",
-    "Programacao/Assuntos_gerais/MVC.md",
     "Programacao/Assuntos_gerais/APIs.md",
     "Programacao/Linguagens/C++.md",
     "Programacao/Linguagens/Java.md",

@@ -1,4 +1,4 @@
-**(Notas atualizadas em 17/08/2025)**
+**(Notas atualizadas em 28/08/2025)**
 
 # Iniciando
 ---
@@ -361,6 +361,10 @@ A exception é um evento que ocorre durante a execução de um programa que inte
 ### Classe Collections
 ## Interface Set<>
 ## Interface Map<>
+
+Map<> é uma das **estruturas de dados** mais importantes no java. É também uma **interface** que define um comportamento para uma estrutura de dados de elementos **chave:valor**. Muito utilizado no conceito de dicionários, estes funcionam como uma associação de valor para uma única chave.
+
+
 ### Classe HashMap
 ## Variáveis por referência
 ## Interface Comparable<>
