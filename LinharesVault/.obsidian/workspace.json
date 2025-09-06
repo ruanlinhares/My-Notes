@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Linguagens/Java.md",
+                "file": "Programacao/Frameworks/Nestjs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java"
+              "title": "Nestjs"
             }
           }
         ]
@@ -174,12 +174,13 @@
   },
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
+    "Programacao/Linguagens/Java.md",
+    "Programacao/Frameworks/Nestjs.md",
     "Programacao/Assuntos_gerais/MVC.md",
     "Programacao/Frameworks/Flutter.md",
     "Programacao/Linguagens/Dart.md",
     "Programacao/Assuntos_gerais/APIs.md",
     "Programacao/Linguagens/C++.md",
-    "Programacao/Linguagens/Java.md",
     "Programacao/Linguagens/C.md",
     "Programacao/Assuntos_gerais/Configuração de rotas (PHP).md",
     "Programacao/Assuntos_gerais/Data_Structure/_Data_Structure.md",
@@ -201,7 +202,6 @@
     "Programacao/Assuntos_gerais/Paradigmas/_Paradigmas.md",
     "Programacao/OS/Linux_Fedora.md",
     "Programacao/OS/Arq_OS.md",
-    "Programacao/Linguagens/Python.md",
     "Programacao/Assuntos_gerais/Paradigmas",
     "Programacao/Frameworks/Spring",
     "Programacao/OS/Linux",
