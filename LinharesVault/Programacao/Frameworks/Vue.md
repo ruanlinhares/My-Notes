@@ -4,13 +4,13 @@
 
 Utilize o comando abaixo para adicionar o Vue ao gerenciador de pacotes:
 
-```JSX
+```bash
 npm install vue
 ```
 
 Após criar o diretório ou clonar um repositório escreva esse comando no seu shell para criar um app vue, podemos usar o vue/cli ou vite:
 
-```JSX
+```bash
 npm create vue@latest //cria o app via vue/cli
 
 npm create vite@latest //cria o app via vite
@@ -18,7 +18,7 @@ npm create vite@latest //cria o app via vite
 
 Assim que o app for criado é necessário passar o seguinte comando ao shell, faça isso dentro da pasta do projeto vue:
 
-```JSX
+```bash
 npm install
 ```
 
@@ -26,7 +26,7 @@ O motivo é fazer com que todas as dependências do **package.json** que o proje
 
 # Essencial
 ---
-O vue é um framework baseado na montagem de componentes visuais. Ele utiliza um conceito de SFC (Single File Component), isso significa que o componente é escrito em um arquivo. Seu HTML, CSS e Typescript ou Javascript estão contidos em um arquivo único. Esse conceito facilita, já que alguns framewoks como o Angular separam a estrutura, estilo e código em no mínimo 3 arquivos.
+O vue é um framework baseado na montagem de componentes visuais. Ele utiliza um conceito de SFC (Single File Component), isso significa que o componente é escrito em um arquivo. Seu HTML, CSS e Typescript ou Javascript estão contidos em um arquivo único. Esse conceito facilita, já que alguns frameworks como o Angular separam a estrutura, estilo e código em no mínimo 3 arquivos.
 
 Estrutura básica de um arquivo ```.vue```:
 
@@ -46,7 +46,7 @@ Estrutura básica de um arquivo ```.vue```:
 
 ## Importação de componentes
 
-No **Vue** trabalhamos diretamente com a importação de componentes. Botões são componentes, seções (main, header, footer) são componentes e páginas são compontenes.
+No **Vue** trabalhamos diretamente com a importação de componentes. Botões são componentes, seções (main, header, footer) são componentes e páginas são componentes.
 
 Na tag ```<script>``` de cada arquivo ```.vue``` poderemos fazer a chamada de outros componentes:
 
@@ -85,7 +85,7 @@ import UserTab from ./components/UserTab.vue
 
 <template>
 	<ImageLogo
-		v-show="showImageLogo" # Ocultar ou exibir o elemento
+		v-show="showImageLogo" //Ocultar ou exibir o elemento
 	/>
 	<AdminTab
 		v-if="accessLevel == 'admin'"
@@ -109,7 +109,7 @@ export default{
 	},
 	data(){
 		return{
-		 showImageLogo: false, #objeto reativo
+		 showImageLogo: false, //objeto reativo
 		 accessLevel: 'admin'
 		}
 	}
