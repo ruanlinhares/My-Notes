@@ -5,7 +5,7 @@ Para iniciar uma configuração de rotas depende do seu nível de necessidade e 
 
 Essa abordagem se baseia na manipulação da variável superglobal ```$_SERVER[]``` para determinar qual conteúdo exibir ou qual ação executar.
 
-```
+```php
 <?php 
 
 //Captura a URL requisitada pelo navegador

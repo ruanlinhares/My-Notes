@@ -1,4 +1,4 @@
-**(Notas atualizada em 07/09/2025)**
+**(Notas atualizada em 13/09/2025)**
 # Iniciando
 ---
 O NestJs é um framework para desenvolvimento back-end que utiliza as linguagens JavaScript, TypeScript e o interpretador NodeJs. Construído em TypeScript, é robusto para a criação aplicações **server-side**, garantindo escalabilidade e manutenabilidade a longo prazo. Por baixo dos panos, o framework se alimenta de outros **frameworks HTTP server**, como Express ou Fastfy.
@@ -54,5 +54,34 @@ O código acima exibe a estrutura de um controller em TypeScript no NestJs. É u
 ### Services
 
 ```ts
+@Injectable()
+export class ProjetoService{
 
+    constructor(
+        @InjectRepository(Projeto)
+        private readonly projetoRepository: Repository<Projeto>,
+    ){}
+
+    inserir(novoProjeto) : Promise<Projeto>{
+        return this.projetoRepository.save(novoProjeto)
+	}
+
+    listarTodosProjetos(){
+        return this.projetoRepository.find();
+    }
 ```
+
+Aqui está como um **Service** é construído no NestJs. Bem simples, encontramos padrões semelhantes em outros frameworks. A maior diferença é a questão do **Repository**, em NestJs não é necessário a criação de um arquivo **Repository**. Com isso funciona? O Nest injeta um repositório na entidade que é passada como parâmetro do ```@InjectRepository(entidade)``` , após isso passa como  assinatura do construtor da classe Service um objeto do tipo ```Repository<entidade>``` . A partir daí, quando instanciarmos esse objeto teremos acesso a métodos como ```save(), delete(), find(), findOne()``` . Essa, é uma excelente feature que elimina a o volume de arquivos do projeto, tornando-o, assim, mais compacto e simples para escalar e fazer manutenção.
+
+### Modules
+```ts
+@Module({
+    imports:[TypeOrmModule.forFeature([Projeto])],
+    controllers:[ProjetoController],
+    providers:[ProjetoService],
+})
+
+export class ProjetoModule{}
+```
+
+# DTOSSSSS escrever sobre
