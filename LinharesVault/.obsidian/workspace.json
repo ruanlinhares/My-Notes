@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Frameworks/Nestjs.md",
+                "file": "Programacao/Frameworks/FastApi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nestjs"
+              "title": "FastApi"
             }
           }
         ]
@@ -174,13 +174,14 @@
   },
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
+    "Programacao/Frameworks/Flutter.md",
+    "Programacao/Frameworks/FastApi.md",
+    "Programacao/Frameworks/Angular.md",
+    "Programacao/Frameworks/Nestjs.md",
     "Programacao/Assuntos_gerais/APIs.md",
     "Programacao/Assuntos_gerais/Configuração de rotas (PHP).md",
-    "Programacao/Frameworks/Nestjs.md",
     "Programacao/Linguagens/Java.md",
     "Programacao/Frameworks/Vue.md",
-    "Programacao/Frameworks/Flutter.md",
-    "Programacao/Frameworks/Angular.md",
     "Programacao/Frameworks/_Frameworks.md",
     "Programacao/Assuntos_gerais/MVC.md",
     "Programacao/Linguagens/Dart.md",
@@ -197,11 +198,10 @@
     "Programacao/Assuntos_gerais/Algorithms/_Algorithms.md",
     "Programacao/Assuntos_gerais/Algorithms",
     "Programacao/Linguagens/_Linguagens.md",
-    "Programacao/Frameworks/Spring/SpringBoot.md",
+    "Programacao/Frameworks/SpringBoot.md",
     "Programacao/Assuntos_gerais/Paradigmas/POO.md",
     "Programacao/_Programacao.md",
     "Programacao/Assuntos_gerais/_ArqSoftware.md",
-    "Programacao/Assuntos_gerais/Paradigmas/_Paradigmas.md",
     "Programacao/Assuntos_gerais/Paradigmas",
     "Programacao/Frameworks/Spring",
     "Programacao/OS/Linux",
