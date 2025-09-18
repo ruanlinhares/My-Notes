@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programacao/Frameworks/FastApi.md",
+                "file": "Programacao/Assuntos_gerais/APIs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FastApi"
+              "title": "APIs"
             }
           }
         ]
@@ -174,8 +174,8 @@
   },
   "active": "ed21ed78594de41f",
   "lastOpenFiles": [
-    "Programacao/Frameworks/Flutter.md",
     "Programacao/Frameworks/FastApi.md",
+    "Programacao/Frameworks/Flutter.md",
     "Programacao/Frameworks/Angular.md",
     "Programacao/Frameworks/Nestjs.md",
     "Programacao/Assuntos_gerais/APIs.md",
