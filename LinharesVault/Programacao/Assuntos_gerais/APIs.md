@@ -90,9 +90,14 @@ Toda vez que o cliente (aplicação) envia uma requisição para o servidor (API
 
 O **JWT** (JSON Web Token) é um padrão **RFC 7519** que define uma jeito compacto e seguro de transmitir informações usando um objeto JSON. Usamos o JWT amplamente em processos de autenticação e autorização para aplicações web. Usamos ele, principalmente, para confirmar o usuário e fornecer acesso a recursos, sem necessidade de guardar o estado da sessão no servidor. O JWT é composto por três partes separadas por pontos:
 
-**Cabeçalho (Header)**
+```json
+//Estrutura de um Jwt
+abcdefghi.jklmnopq.rstuvwxyz
+```
 
-O Header é composto por 2 partes:
+**Header (abcdefghi)**
+
+O Header (cabeçalho)é composto por 2 partes:
 -  O tipo do token, geralmente é ```"JWT"```
 -  O algoritmo de assinatura, como ```HS256``` ou ```RS256```, são exemplos mais comuns.
   
@@ -104,9 +109,23 @@ O Header é composto por 2 partes:
  ```
 
 
-**Corpo (Payload)**
-O **payload** carrega as informações, mais conhecidas como **"claims"**, que queremos passar. Essas
-informações, geralmente, são coisas relevantes para a sua aplicação, podem ser a identidade do usuário, permissões, tempo de exipiração do token
+**Payload (jklmnopq)**
+
+O **payload** (corpo) carrega as informações, mais conhecidas como **"claims"**, que queremos passar. Essas informações, geralmente, são coisas relevantes para a sua aplicação, podem ser a identidade do usuário, permissões, tempo de expiração do token, etc.
+
+```JSON
+{
+  "sub": "1234567890",
+  "name": "João Silva",
+  "role": "admin",
+  "iat": 1695000000,
+  "exp": 1695003600
+}
+```
+
+**tipos de claims**
+- 
+
 
 # Extra knowledge
 ---
