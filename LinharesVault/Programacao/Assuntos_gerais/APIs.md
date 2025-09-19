@@ -83,13 +83,31 @@ Toda vez que o cliente (aplicação) envia uma requisição para o servidor (API
 
 # Essencial
 ---
-## Comunicação com a API
-No geral, as linguagens e frameworks tem bibliotecas para facilitar a integração da API com a aplicação.Exemplos:
-
-**JAVA**: [Biblioteca HTTPRequest](https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpRequest.html) / [Biclioteca HTTPResponse](https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpResponse.html)
-
 ## Tipos de APIs
+
+## Segurança da API - boas práticas
+### Autenticação com JWT
+
+O **JWT** (JSON Web Token) é um padrão **RFC 7519** que define uma jeito compacto e seguro de transmitir informações usando um objeto JSON. Usamos o JWT amplamente em processos de autenticação e autorização para aplicações web. Usamos ele, principalmente, para confirmar o usuário e fornecer acesso a recursos, sem necessidade de guardar o estado da sessão no servidor. O JWT é composto por três partes separadas por pontos:
+
+**Cabeçalho (Header)**
+
+O Header é composto por 2 partes:
+-  O tipo do token, geralmente é ```"JWT"```
+-  O algoritmo de assinatura, como ```HS256``` ou ```RS256```, são exemplos mais comuns.
+  
+ ```JSON
+ {
+	 "alg": "HS256",
+	 "typ": "JWT"
+ }
+ ```
+
+
+**Corpo (Payload)**
+O **payload** carrega as informações, mais conhecidas como **"claims"**, que queremos passar. Essas
+informações, geralmente, são coisas relevantes para a sua aplicação, podem ser a identidade do usuário, permissões, tempo de exipiração do token
 
 # Extra knowledge
 ---
-**MAVEN Repository** (Repositório de bibliotecas java): [MVN Repository](https://mvnrepository.com/) 
+
