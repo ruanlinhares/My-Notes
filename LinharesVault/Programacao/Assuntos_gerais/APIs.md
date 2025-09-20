@@ -94,9 +94,7 @@ O **JWT** (JSON Web Token) é um padrão **RFC 7519** que define uma jeito compa
 //Estrutura de um Jwt
 abcdefghi.jklmnopq.rstuvwxyz
 ```
-
-**Header (abcdefghi)**
-
+#### Header (abcdefghi)
 O Header (cabeçalho)é composto por 2 partes:
 -  O tipo do token, geralmente é ```"JWT"```
 -  O algoritmo de assinatura, como ```HS256``` ou ```RS256```, são exemplos mais comuns.
@@ -109,8 +107,7 @@ O Header (cabeçalho)é composto por 2 partes:
  ```
 
 
-**Payload (jklmnopq)**
-
+#### Payload (jklmnopq)
 O **payload** (corpo) carrega as informações, mais conhecidas como **"claims"**, que queremos passar. Essas informações, geralmente, são coisas relevantes para a sua aplicação, podem ser a identidade do usuário, permissões, tempo de expiração do token, etc.
 
 ```JSON
@@ -123,9 +120,47 @@ O **payload** (corpo) carrega as informações, mais conhecidas como **"claims"*
 }
 ```
 
-**tipos de claims**
-- 
+**Claims**: Podemos dividir as claims em **registradas**, **públicas** e **privadas**:
 
+**Registradas**: São claims **padronizadas** pelo JWT. Elas **não são obrigatórias**, mas são **recomendadas**.
+
+| Claim   | Significado                                                |
+| ------- | ---------------------------------------------------------- |
+| **iss** | Issuer -> Quem emitiu o token                              |
+| **sub** | Subject -> O assunto do token (geralmente o id do usuário) |
+| **aud** | audience -> Para quem o token é destinado                  |
+| **exp** | Expiration time -> Tempo para o token expirar              |
+| **nbf** | Not Before -> Quando o token passa a ser válido            |
+| **iat** | Issued At -> Quando o token foi gerado                     |
+
+**Públicas**: São claims **não padronizadas**, mas que podemos usar publicamente. Para evitar conflitos, é recomendado que você use claims registradas no [Internet Assigned Numbers Authorirty](https://www.iana.org/assignments/jwt/jwt.xhtml).
+
+```JSON
+{
+  "name": "Peter Parker",
+  "email": "amigodavizinhanca@email.com"
+}
+```
+
+**Privadas**: São roles **personalizadas** de acordo com o que a aplicação deseja transferir.
+
+```JSON
+{
+  "role": "admin",
+  "permissions": ["read", "write", "delete"]
+}
+```
+
+#### Assinatura (rstuvwxyz)
+A assinatura serve para verificar se o token foi alterado ou se o token foi gerado por quem diz ter gerado. Ele impede que alguém **edite o payload** e tente usar o token de forma maliciosa.
+A assinatura é gerada a partir do **header** e do **payload**, usando um segredo ou uma **chave privada**:
+
+```
+HMACSHA256(
+  base64UrlEncode(header) + "." + base64UrlEncode(payload),
+  chave_privada
+)
+```
 
 # Extra knowledge
 ---
