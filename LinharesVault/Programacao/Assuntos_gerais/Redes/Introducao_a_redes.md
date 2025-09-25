@@ -14,6 +14,18 @@
 **1990:**
 **2000:**
 
+### Redes de computadores X Sistemas distribuídos
+
+**Redes de computadores:** Um conjunto de dispositivos interconectados com objetivo de transmitir informações entre si.
+
+**Sistemas distribuídos:** também são dispositivos interconectados, porém aparentam ser um único sistema para o usuário. Exemplo: **Nuvem ou um banco de dados distribuído**.
+
+#### Tipos de Rede
+
+**LAN:**
+**MAN:**
+**WAN:**
+
 # Essencial
 ---
 # Extra
