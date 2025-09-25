@@ -1,7 +1,7 @@
 **(Notas atualizadas em 17/08/2025)**
 # Iniciando
 ---
-**API** é uma sigla para Application Programming Interface. Geralmente integrada às aplicações, é um conjunto de regras, protocolos e ferramentas que permite a comunicação entre diferentes softwares e aplicações.
+**API** é uma sigla para **Application Programming Interface**. Geralmente integrada às aplicações, é um conjunto de regras, protocolos e ferramentas que permite a comunicação entre diferentes softwares e aplicações.
 
 No mundo das APIs a comunicação ocorre por meio de **requisições** e **respostas**:
 
@@ -85,6 +85,10 @@ Toda vez que o cliente (aplicação) envia uma requisição para o servidor (API
 ---
 ## Tipos de APIs
 
+
+# Extra
+---
+
 ## Segurança da API - boas práticas
 ### Autenticação com JWT
 
@@ -92,9 +96,9 @@ O **JWT** (JSON Web Token) é um padrão **RFC 7519** que define uma jeito compa
 
 ```json
 //Estrutura de um Jwt
-abcdefghi.jklmnopq.rstuvwxyz
+header.payload.assingnature
 ```
-#### Header (abcdefghi)
+#### Header
 O Header (cabeçalho)é composto por 2 partes:
 -  O tipo do token, geralmente é ```"JWT"```
 -  O algoritmo de assinatura, como ```HS256``` ou ```RS256```, são exemplos mais comuns.
@@ -107,7 +111,7 @@ O Header (cabeçalho)é composto por 2 partes:
  ```
 
 
-#### Payload (jklmnopq)
+#### Payload
 O **payload** (corpo) carrega as informações, mais conhecidas como **"claims"**, que queremos passar. Essas informações, geralmente, são coisas relevantes para a sua aplicação, podem ser a identidade do usuário, permissões, tempo de expiração do token, etc.
 
 ```JSON
@@ -133,7 +137,7 @@ O **payload** (corpo) carrega as informações, mais conhecidas como **"claims"*
 | **nbf** | Not Before -> Quando o token passa a ser válido            |
 | **iat** | Issued At -> Quando o token foi gerado                     |
 
-**Públicas**: São claims **não padronizadas**, mas que podemos usar publicamente. Para evitar conflitos, é recomendado que você use claims registradas no [Internet Assigned Numbers Authorirty](https://www.iana.org/assignments/jwt/jwt.xhtml).
+**Públicas**: São claims **não padronizadas**, mas que podemos usar publicamente. Para evitar conflitos, é recomendado que você use claims registradas no [Internet Assigned Numbers Authority](https://www.iana.org/assignments/jwt/jwt.xhtml).
 
 ```JSON
 {
@@ -151,7 +155,7 @@ O **payload** (corpo) carrega as informações, mais conhecidas como **"claims"*
 }
 ```
 
-#### Assinatura (rstuvwxyz)
+#### Assinatura
 A assinatura serve para verificar se o token foi alterado ou se o token foi gerado por quem diz ter gerado. Ele impede que alguém **edite o payload** e tente usar o token de forma maliciosa.
 A assinatura é gerada a partir do **header** e do **payload**, usando um segredo ou uma **chave privada**:
 
@@ -162,6 +166,4 @@ HMACSHA256(
 )
 ```
 
-# Extra knowledge
----
-
+Cada parte do token será **codificada em Base64 ou Base64URL** para manter um grau de segurança, porém pode ser decodificada por qualquer um.
